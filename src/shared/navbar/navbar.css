@@ -1,0 +1,81 @@
+.container-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background-color: transparent;
+  padding: 1rem;
+}
+
+.container-acronym {
+  justify-self: start;
+}
+
+.acronym-link {
+  color: #525252;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.acronym-link:hover {
+  color: #b7b7b7;
+  font-weight: bold;
+}
+
+.nav-options {
+  display: flex;
+  justify-self: center;
+  gap: 1rem;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+
+.nav-option a {
+  color: #525252;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-option a:hover {
+  color: #b7b7b7;
+  font-weight: bold;
+}
+
+
+.btn-theme {
+  justify-self: end;
+  border-radius: 50%;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(55 65 81);
+  padding: 0.5rem;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn-theme:hover {
+  background-color: rgb(75 85 99);
+}
+
+@media all and (min-width: 576px) {
+  .nav-options {
+    gap: 4rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .nav-options {
+    gap: 8rem;
+  }
+
+  .nav-option a {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (min-width: 1199.98px) {
+  .nav-options {
+    gap: 10rem;
+  }
+}
